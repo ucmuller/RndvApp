@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AQG-kP-ZuJ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--招待作成-->
+        <scene sceneID="5B0-PH-orR">
+            <objects>
+                <viewController id="1nN-Hb-XZQ" customClass="ReceiptRegistrationContainerVC" customModule="Gururi" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="招待作成" id="B1S-H0-xIX">
+                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="61H-Pv-jG4">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="closeButtonTapped:" destination="1nN-Hb-XZQ" id="O9C-at-rrr"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="mev-Ch-yNV" kind="show" identifier="DateSelectionVC" id="GvQ-wa-ndd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xhj-FF-VU3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2518.840579710145" y="-452.67857142857139"/>
+        </scene>
+        <!--Date SelectionVC-->
+        <scene sceneID="5kW-sT-35a">
+            <objects>
+                <viewController storyboardIdentifier="DateSelectionVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="mev-Ch-yNV" customClass="DateSelectionVC" customModule="Gururi" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="gIn-56-nbM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OjS-sG-Y2l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3461" y="-453"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1qg-rx-JFq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AQG-kP-ZuJ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="email" id="gQk-mn-D1X"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="DWa-Za-59l">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="1" green="0.86274509799999999" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="1nN-Hb-XZQ" kind="relationship" relationship="rootViewController" id="iFH-dC-R32"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rxH-El-xYj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1581.5999999999999" y="-452.02398800599701"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="email" width="18" height="18"/>
+    </resources>
+</document>

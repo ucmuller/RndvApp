@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InvitationProgressBar" customModule="Gururi" customModuleProvider="target">
+            <connections>
+                <outlet property="stackView" destination="KWx-B5-1rQ" id="woz-CL-sD5"/>
+                <outletCollection property="progressBarItems" destination="fuI-qq-oyg" collectionClass="NSMutableArray" id="alK-Yc-S18"/>
+                <outletCollection property="progressBarItems" destination="nbB-gO-7wj" collectionClass="NSMutableArray" id="Iud-hX-yFh"/>
+                <outletCollection property="progressBarItems" destination="rBT-ju-VON" collectionClass="NSMutableArray" id="I37-hR-cS7"/>
+                <outletCollection property="progressBarItems" destination="FcR-ED-sWM" collectionClass="NSMutableArray" id="kOi-eV-9ge"/>
+                <outletCollection property="progressBarItems" destination="ML4-wU-e1p" collectionClass="NSMutableArray" id="mrt-n3-2UP"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="402" height="82"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="KWx-B5-1rQ">
+                    <rect key="frame" x="0.0" y="0.0" width="402" height="82"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fuI-qq-oyg" customClass="InvitationProgressBarItem" customModule="Gururi" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="80.5" height="82"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nbB-gO-7wj" customClass="InvitationProgressBarItem" customModule="Gururi" customModuleProvider="target">
+                            <rect key="frame" x="80.5" y="0.0" width="80.5" height="82"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rBT-ju-VON" customClass="InvitationProgressBarItem" customModule="Gururi" customModuleProvider="target">
+                            <rect key="frame" x="161" y="0.0" width="80" height="82"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FcR-ED-sWM" customClass="InvitationProgressBarItem" customModule="Gururi" customModuleProvider="target">
+                            <rect key="frame" x="241" y="0.0" width="80.5" height="82"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ML4-wU-e1p" customClass="InvitationProgressBarItem" customModule="Gururi" customModuleProvider="target">
+                            <rect key="frame" x="321.5" y="0.0" width="80.5" height="82"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="nbB-gO-7wj" firstAttribute="height" secondItem="KWx-B5-1rQ" secondAttribute="height" id="5X7-2i-8L1"/>
+                        <constraint firstItem="FcR-ED-sWM" firstAttribute="width" secondItem="KWx-B5-1rQ" secondAttribute="width" multiplier="0.2" id="CkJ-2Z-tYA"/>
+                        <constraint firstItem="FcR-ED-sWM" firstAttribute="height" secondItem="KWx-B5-1rQ" secondAttribute="height" id="IZ3-dn-Go7"/>
+                        <constraint firstItem="fuI-qq-oyg" firstAttribute="width" secondItem="KWx-B5-1rQ" secondAttribute="width" multiplier="0.2" id="IjW-Ep-vtS"/>
+                        <constraint firstItem="fuI-qq-oyg" firstAttribute="height" secondItem="KWx-B5-1rQ" secondAttribute="height" id="R0I-px-OtH"/>
+                        <constraint firstItem="ML4-wU-e1p" firstAttribute="height" secondItem="KWx-B5-1rQ" secondAttribute="height" id="TrS-kl-exG"/>
+                        <constraint firstItem="nbB-gO-7wj" firstAttribute="width" secondItem="KWx-B5-1rQ" secondAttribute="width" multiplier="0.2" id="Vhs-MM-yz4"/>
+                        <constraint firstItem="rBT-ju-VON" firstAttribute="height" secondItem="KWx-B5-1rQ" secondAttribute="height" id="XTd-cf-2JY"/>
+                        <constraint firstItem="ML4-wU-e1p" firstAttribute="width" secondItem="KWx-B5-1rQ" secondAttribute="width" multiplier="0.2" id="oXh-Je-7Nb"/>
+                        <constraint firstItem="rBT-ju-VON" firstAttribute="width" secondItem="KWx-B5-1rQ" secondAttribute="width" multiplier="0.2" id="yRN-sT-g65"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="KWx-B5-1rQ" secondAttribute="bottom" id="cmS-hT-3Cq"/>
+                <constraint firstItem="KWx-B5-1rQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="iyp-fB-syF"/>
+                <constraint firstAttribute="trailing" secondItem="KWx-B5-1rQ" secondAttribute="trailing" id="taP-lu-Dxv"/>
+                <constraint firstItem="KWx-B5-1rQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="wLa-kK-hfD"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-10.144927536231885" y="33.482142857142854"/>
+        </view>
+    </objects>
+</document>

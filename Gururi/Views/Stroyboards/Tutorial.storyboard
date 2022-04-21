@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Hiv-0i-lZg">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Invitation List TutorialVC-->
+        <scene sceneID="pTP-3S-VH5">
+            <objects>
+                <viewController id="18k-mv-RfU" customClass="InvitationListTutorialVC" customModule="Gururi" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="tZq-sR-Oo4"/>
+                    <connections>
+                        <segue destination="xdN-D9-bvu" kind="show" identifier="showInvitationCreateTutorialVC" id="3Ef-7M-37W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y3X-EM-g8a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="910.14492753623199" y="0.6696428571428571"/>
+        </scene>
+        <!--Invitation Create TutorialVC-->
+        <scene sceneID="JIM-Hs-YrB">
+            <objects>
+                <viewController id="xdN-D9-bvu" customClass="InvitationCreateTutorialVC" customModule="Gururi" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="CGM-8b-4qR"/>
+                    <connections>
+                        <segue destination="J2P-QJ-Sh4" kind="show" identifier="showInvitationListTutorialVC" id="1XO-OF-RHr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ece-lU-kSF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1771.0144927536232" y="0.6696428571428571"/>
+        </scene>
+        <!--Invitation List TutorialVC-->
+        <scene sceneID="7i6-2U-T2H">
+            <objects>
+                <viewController id="J2P-QJ-Sh4" customClass="InvitationListTutorialVC" customModule="Gururi" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ft9-Hx-Mop"/>
+                    <connections>
+                        <segue destination="xVF-JG-yDM" kind="show" identifier="showInvitationDetailTutorialVC" id="v3N-h3-ZjL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qLh-43-g8B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2668.1159420289855" y="0.6696428571428571"/>
+        </scene>
+        <!--Invitation Detail TutorialVC-->
+        <scene sceneID="dhD-aE-KRh">
+            <objects>
+                <viewController id="xVF-JG-yDM" customClass="InvitationDetailTutorialVC" customModule="Gururi" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="7e6-pf-8BK"/>
+                    <connections>
+                        <segue destination="lNc-bk-hb7" kind="show" identifier="backToInvitationListTutorialVC" id="Jmd-PV-iJo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mBF-Dw-C0v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3579.7101449275365" y="0.6696428571428571"/>
+        </scene>
+        <!--Invitation List TutorialVC-->
+        <scene sceneID="y5L-ei-Dkl">
+            <objects>
+                <viewController id="lNc-bk-hb7" customClass="InvitationListTutorialVC" customModule="Gururi" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Pxf-ug-i0z"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LvI-7w-7kf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4442.0289855072469" y="0.6696428571428571"/>
+        </scene>
+        <!--Custom Tab Bar Controller-->
+        <scene sceneID="DGh-e1-GkA">
+            <objects>
+                <tabBarController id="Hiv-0i-lZg" customClass="CustomTabBarController" customModule="Gururi" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="krf-Ej-YbT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="7aw-eO-Y1Y" kind="relationship" relationship="viewControllers" id="ESc-lP-f5n"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KUf-7v-QGH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-757" y="1"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="5aF-ck-4ef">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7aw-eO-Y1Y" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="gtq-eD-roJ"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="U1k-Lv-A20">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="1" green="0.86274509799999999" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="18k-mv-RfU" kind="relationship" relationship="rootViewController" id="PTd-wY-X1l"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EK0-QY-k8N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="45" y="1"/>
+        </scene>
+    </scenes>
+</document>

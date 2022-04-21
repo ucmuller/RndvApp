@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FirstLaunchVC" customModule="Gururi" customModuleProvider="target">
+            <connections>
+                <outlet property="descriptionView_1" destination="Ysz-PV-tNS" id="JLT-7h-On2"/>
+                <outlet property="descriptionView_2" destination="ATW-ZI-Vu2" id="WKa-uY-kED"/>
+                <outlet property="descriptionView_3" destination="Va0-vu-5bj" id="dnX-Uv-8Pm"/>
+                <outlet property="descriptionView_4" destination="2sR-LF-oek" id="Nyk-wr-Ksd"/>
+                <outlet property="scrollView" destination="a1s-kk-8Ez" id="tpO-Fo-oiC"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Zgu-Q1-cD4">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a1s-kk-8Ez">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ary-tj-mee">
+                            <rect key="frame" x="0.0" y="0.0" width="1656" height="896"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ATW-ZI-Vu2" customClass="FirstLaunchDescriptionView" customModule="Gururi" customModuleProvider="target">
+                                    <rect key="frame" x="414" y="0.0" width="414" height="896"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Va0-vu-5bj" customClass="FirstLaunchDescriptionView" customModule="Gururi" customModuleProvider="target">
+                                    <rect key="frame" x="828" y="0.0" width="414" height="896"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2sR-LF-oek" customClass="FirstLaunchDescriptionView" customModule="Gururi" customModuleProvider="target">
+                                    <rect key="frame" x="1242" y="0.0" width="414" height="896"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ysz-PV-tNS" customClass="FirstLaunchDescriptionView" customModule="Gururi" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="Ysz-PV-tNS" secondAttribute="bottom" id="1X6-ci-Z1Y"/>
+                                <constraint firstItem="Va0-vu-5bj" firstAttribute="width" secondItem="Ysz-PV-tNS" secondAttribute="width" id="4a5-c0-mWe"/>
+                                <constraint firstItem="Va0-vu-5bj" firstAttribute="leading" secondItem="ATW-ZI-Vu2" secondAttribute="trailing" id="72J-ip-oxb"/>
+                                <constraint firstItem="2sR-LF-oek" firstAttribute="leading" secondItem="Va0-vu-5bj" secondAttribute="trailing" id="9jV-ii-Zit"/>
+                                <constraint firstItem="ATW-ZI-Vu2" firstAttribute="width" secondItem="Ysz-PV-tNS" secondAttribute="width" id="A1f-N2-h5e"/>
+                                <constraint firstItem="Ysz-PV-tNS" firstAttribute="leading" secondItem="ary-tj-mee" secondAttribute="leading" id="AMj-jM-Bqm"/>
+                                <constraint firstItem="Va0-vu-5bj" firstAttribute="leading" secondItem="ATW-ZI-Vu2" secondAttribute="trailing" id="CGH-bO-zKT"/>
+                                <constraint firstItem="Va0-vu-5bj" firstAttribute="top" secondItem="ary-tj-mee" secondAttribute="top" id="JSz-ff-HR2"/>
+                                <constraint firstAttribute="bottom" secondItem="2sR-LF-oek" secondAttribute="bottom" id="NlR-ZT-Cnu"/>
+                                <constraint firstAttribute="bottom" secondItem="Va0-vu-5bj" secondAttribute="bottom" id="P7F-HJ-5KC"/>
+                                <constraint firstItem="2sR-LF-oek" firstAttribute="leading" secondItem="Va0-vu-5bj" secondAttribute="trailing" id="R4d-ej-PGR"/>
+                                <constraint firstItem="2sR-LF-oek" firstAttribute="top" secondItem="ary-tj-mee" secondAttribute="top" id="SSL-LW-vIB"/>
+                                <constraint firstAttribute="trailing" secondItem="2sR-LF-oek" secondAttribute="trailing" id="U0S-X9-F0L"/>
+                                <constraint firstItem="ATW-ZI-Vu2" firstAttribute="leading" secondItem="Ysz-PV-tNS" secondAttribute="trailing" id="VhY-DH-e9V"/>
+                                <constraint firstItem="ATW-ZI-Vu2" firstAttribute="top" secondItem="ary-tj-mee" secondAttribute="top" id="YN7-sI-Cza"/>
+                                <constraint firstItem="ATW-ZI-Vu2" firstAttribute="leading" secondItem="Ysz-PV-tNS" secondAttribute="trailing" id="a9x-OY-8s7"/>
+                                <constraint firstItem="2sR-LF-oek" firstAttribute="width" secondItem="Ysz-PV-tNS" secondAttribute="width" id="aNZ-IX-uu7"/>
+                                <constraint firstAttribute="bottom" secondItem="ATW-ZI-Vu2" secondAttribute="bottom" id="heQ-BO-aLr"/>
+                                <constraint firstItem="Ysz-PV-tNS" firstAttribute="top" secondItem="ary-tj-mee" secondAttribute="top" id="tSD-X8-pDn"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="ary-tj-mee" secondAttribute="bottom" id="7hH-TX-rwR"/>
+                        <constraint firstItem="ary-tj-mee" firstAttribute="top" secondItem="a1s-kk-8Ez" secondAttribute="top" id="8ui-i8-YZv"/>
+                        <constraint firstAttribute="trailing" secondItem="ary-tj-mee" secondAttribute="trailing" id="L8x-2M-nDd"/>
+                        <constraint firstItem="ary-tj-mee" firstAttribute="height" secondItem="a1s-kk-8Ez" secondAttribute="height" id="Lk0-Kd-OEv"/>
+                        <constraint firstItem="ary-tj-mee" firstAttribute="width" secondItem="a1s-kk-8Ez" secondAttribute="width" multiplier="4:1" id="N7i-YV-9qX"/>
+                        <constraint firstItem="ary-tj-mee" firstAttribute="leading" secondItem="a1s-kk-8Ez" secondAttribute="leading" id="ozo-f0-GLw"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="a1s-kk-8Ez" firstAttribute="leading" secondItem="MNR-V3-Arf" secondAttribute="leading" id="1mu-Ft-5Fl"/>
+                <constraint firstItem="a1s-kk-8Ez" firstAttribute="trailing" secondItem="MNR-V3-Arf" secondAttribute="trailing" id="BiA-vR-DGI"/>
+                <constraint firstItem="a1s-kk-8Ez" firstAttribute="top" secondItem="MNR-V3-Arf" secondAttribute="top" id="HDx-cq-UVI"/>
+                <constraint firstItem="a1s-kk-8Ez" firstAttribute="bottom" secondItem="MNR-V3-Arf" secondAttribute="bottom" id="J3z-xj-Vpr"/>
+                <constraint firstItem="MNR-V3-Arf" firstAttribute="trailing" secondItem="a1s-kk-8Ez" secondAttribute="trailing" id="Opj-D0-tOk"/>
+                <constraint firstItem="MNR-V3-Arf" firstAttribute="bottom" secondItem="a1s-kk-8Ez" secondAttribute="bottom" id="S0L-V6-0nE"/>
+                <constraint firstItem="a1s-kk-8Ez" firstAttribute="top" secondItem="MNR-V3-Arf" secondAttribute="top" id="cpd-HH-VB7"/>
+                <constraint firstItem="a1s-kk-8Ez" firstAttribute="leading" secondItem="MNR-V3-Arf" secondAttribute="leading" id="jIy-FG-Og8"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="MNR-V3-Arf"/>
+            <point key="canvasLocation" x="30" y="263"/>
+        </view>
+    </objects>
+</document>

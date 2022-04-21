@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="rounded-mplus-2c-medium.ttf">
+            <string>rounded-mplus-2c-medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DateSelectionVC" customModule="Gururi" customModuleProvider="target">
+            <connections>
+                <outlet property="calendar" destination="i7O-QA-JTB" id="JgR-rB-ztA"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="esG-YI-LcU"/>
+                <outlet property="selectButton" destination="4qa-Se-5Pk" id="i4x-p2-diV"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i7O-QA-JTB" customClass="FSCalendar">
+                    <rect key="frame" x="0.0" y="30" width="414" height="448"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="weekdayTextColor">
+                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="headerTitleColor">
+                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="todayColor">
+                            <color key="value" red="0.80000000000000004" green="0.0" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="selectionColor">
+                            <color key="value" red="0.98431372549999996" green="0.74901960779999999" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="aQd-zk-vd2"/>
+                        <outlet property="delegate" destination="-1" id="T6p-rW-1ET"/>
+                    </connections>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4qa-Se-5Pk">
+                    <rect key="frame" x="30" y="508" width="354" height="50"/>
+                    <color key="backgroundColor" red="0.98431372549999996" green="0.74901960779999999" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Hhr-CL-hHG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="rounded-mplus-2c-medium" family="Rounded M+ 2c" pointSize="17"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="決定"/>
+                    <connections>
+                        <action selector="selectButtonPressed:" destination="-1" eventType="touchUpInside" id="4wg-9D-6qZ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="i7O-QA-JTB" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="2wX-8r-yc9"/>
+                <constraint firstItem="i7O-QA-JTB" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="Nci-ri-aPQ"/>
+                <constraint firstItem="4qa-Se-5Pk" firstAttribute="top" secondItem="i7O-QA-JTB" secondAttribute="bottom" constant="30" id="fXT-D5-dnc"/>
+                <constraint firstItem="i7O-QA-JTB" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="30" id="hh2-k6-CMO"/>
+                <constraint firstItem="i7O-QA-JTB" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.5" id="tb7-Jp-CDS"/>
+                <constraint firstItem="4qa-Se-5Pk" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="30" id="vC8-b9-EW1"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="4qa-Se-5Pk" secondAttribute="trailing" constant="30" id="yFF-OD-HFB"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="139" y="154"/>
+        </view>
+    </objects>
+</document>

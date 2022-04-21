@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eQG-Qv-TAf">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--プロフィール-->
+        <scene sceneID="wO7-dN-h5P">
+            <objects>
+                <viewController id="v95-LI-yGo" customClass="ProfileVC" customModule="Gururi" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="プロフィール" id="vOk-kh-9Qx"/>
+                    <connections>
+                        <segue destination="D3x-OP-cmf" kind="show" identifier="goToSetting" id="WP9-0g-ORz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Usi-u1-6NO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2480" y="-1370"/>
+        </scene>
+        <!--編集-->
+        <scene sceneID="Tv2-vm-3Dd">
+            <objects>
+                <viewController id="GET-2s-lfh" customClass="EditProfileVC" customModule="Gururi" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="編集" id="TXU-Mi-DKx">
+                        <barButtonItem key="rightBarButtonItem" title="保存" id="6jI-aO-LY3">
+                            <connections>
+                                <action selector="saveEditedProfileData:" destination="GET-2s-lfh" id="kWR-HL-ryZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yXL-lG-YWI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5012" y="-1370"/>
+        </scene>
+        <!--Contact FormVC-->
+        <scene sceneID="jhP-dC-UdI">
+            <objects>
+                <viewController id="raQ-kB-HeR" customClass="ContactFormVC" customModule="Gururi" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="AL5-lh-Gt6"/>
+                    <connections>
+                        <segue destination="gL9-4c-ufU" kind="show" identifier="goToAfterContactVC" id="KnM-a4-C9a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MnP-ek-rcC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2480" y="-108"/>
+        </scene>
+        <!--After ContactVC-->
+        <scene sceneID="m9x-Td-xcT">
+            <objects>
+                <viewController id="gL9-4c-ufU" customClass="AfterContactVC" customModule="Gururi" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="cUc-OV-OED"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mai-6H-yxq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2480" y="603"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gMs-aG-MKT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eQG-Qv-TAf" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="footer_icon_profile" id="rL5-XB-k20"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yIH-EC-emP">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="1" green="0.86274509799999999" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="v95-LI-yGo" kind="relationship" relationship="rootViewController" id="0jY-fE-wFI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="50d-03-BD1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1619" y="-1370"/>
+        </scene>
+        <!--設定-->
+        <scene sceneID="7V9-R2-NCo">
+            <objects>
+                <viewController id="D3x-OP-cmf" customClass="SettingsVC" customModule="Gururi" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="設定" id="Y1w-dD-TjX">
+                        <barButtonItem key="rightBarButtonItem" title="ログアウト" id="3rB-Mv-Bji">
+                            <connections>
+                                <action selector="signOutPressed:" destination="D3x-OP-cmf" id="o5v-ol-Cw2"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="raQ-kB-HeR" kind="show" identifier="goToContactFormVC" id="h1M-1d-GPn"/>
+                        <segue destination="zcq-EC-va0" kind="show" identifier="goToReferralCreateVC" id="atE-07-7kW"/>
+                        <segue destination="BK6-bc-Laj" kind="show" identifier="goToPrivacyPolicyVC" id="f8T-C2-xTV"/>
+                        <segue destination="GET-2s-lfh" kind="show" identifier="goToEditProfileVC" id="N0U-YQ-uFv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g7U-eT-Oet" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3738" y="-1370"/>
+        </scene>
+        <!--Referral CreateVC-->
+        <scene sceneID="Y28-ZO-T9B">
+            <objects>
+                <viewController storyboardIdentifier="referralCreateVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="zcq-EC-va0" customClass="ReferralCreateVC" customModule="Gururi" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="CNu-GN-1Ol"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Als-WH-Vin" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3738" y="-108"/>
+        </scene>
+        <!--Privacy PolicyVC-->
+        <scene sceneID="IWH-Ei-CpF">
+            <objects>
+                <viewController id="BK6-bc-Laj" customClass="PrivacyPolicyVC" customModule="Gururi" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="TbX-Hu-cuK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oJQ-kJ-ogj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5013" y="-108"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="footer_icon_profile" width="21" height="25"/>
+    </resources>
+</document>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="rounded-mplus-2c-medium.ttf">
+            <string>rounded-mplus-2c-medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EditProfileCell" id="pgT-Co-4eB" userLabel="EditProfileCell" customClass="EditProfileCell" customModule="Gururi" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pgT-Co-4eB" id="bfs-fZ-6x5">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c3H-A7-jBT">
+                        <rect key="frame" x="20" y="10" width="44" height="24"/>
+                        <fontDescription key="fontDescription" name="rounded-mplus-2c-medium" family="Rounded M+ 2c" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wp0-Mx-WiJ">
+                        <rect key="frame" x="100" y="5" width="200" height="34"/>
+                        <color key="tintColor" red="0.98431372549999996" green="0.74901960779999999" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="200" id="75z-Pb-brD"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="rounded-mplus-2c-medium" family="Rounded M+ 2c" pointSize="17"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Wp0-Mx-WiJ" firstAttribute="centerY" secondItem="bfs-fZ-6x5" secondAttribute="centerY" id="LCw-j8-2FU"/>
+                    <constraint firstItem="c3H-A7-jBT" firstAttribute="leading" secondItem="bfs-fZ-6x5" secondAttribute="leading" constant="20" id="OJm-35-QKW"/>
+                    <constraint firstItem="c3H-A7-jBT" firstAttribute="centerY" secondItem="bfs-fZ-6x5" secondAttribute="centerY" id="gLz-Cv-S65"/>
+                    <constraint firstItem="Wp0-Mx-WiJ" firstAttribute="top" secondItem="bfs-fZ-6x5" secondAttribute="top" constant="5" id="nZo-h1-FFv"/>
+                    <constraint firstAttribute="trailing" secondItem="Wp0-Mx-WiJ" secondAttribute="trailing" constant="20" id="tQe-hI-Qtg"/>
+                    <constraint firstAttribute="bottom" secondItem="Wp0-Mx-WiJ" secondAttribute="bottom" constant="5" id="tdl-6j-zCh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="Ui8-dl-btv"/>
+            <connections>
+                <outlet property="editProfileTextfield" destination="Wp0-Mx-WiJ" id="RRF-KB-lBv"/>
+                <outlet property="editProfileTitleLabel" destination="c3H-A7-jBT" id="0KB-FG-sAX"/>
+            </connections>
+            <point key="canvasLocation" x="-4.3478260869565224" y="-44.196428571428569"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JJ2-Zx-8bl">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--詳細-->
+        <scene sceneID="DQv-qW-CZ8">
+            <objects>
+                <viewController id="iHr-Sv-tDR" customClass="InvitationDetailVC" customModule="Gururi" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="詳細" id="eky-hO-SLX"/>
+                    <size key="freeformSize" width="375" height="900"/>
+                    <connections>
+                        <segue destination="Tll-NL-IGq" kind="show" identifier="showCouponLogList" id="NwC-Ob-Aof"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zzg-md-BAT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5264.4927536231889" y="454.01785714285711"/>
+        </scene>
+        <!--ポイント使用履歴-->
+        <scene sceneID="wdl-3G-8GM">
+            <objects>
+                <viewController id="Tll-NL-IGq" customClass="CouponLogListVC" customModule="Gururi" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="ポイント使用履歴" id="Vwe-kl-IB1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O0Y-09-QRN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6257" y="453"/>
+        </scene>
+        <!--招待一覧-->
+        <scene sceneID="q6n-Cx-ukb">
+            <objects>
+                <viewController id="JHL-IS-n16" customClass="InvitationListVC" customModule="Gururi" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="招待一覧" id="wuU-ml-18U"/>
+                    <connections>
+                        <segue destination="iHr-Sv-tDR" kind="show" identifier="showInvitaionDetail" id="tSA-ac-yZG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Z8-8j-xmh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4318.840579710145" y="452.67857142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ijg-r2-KdW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JJ2-Zx-8bl" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="footer_icon_list" id="v9F-QF-EhZ"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="weP-B4-auX">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="1" green="0.86274509799999999" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="JHL-IS-n16" kind="relationship" relationship="rootViewController" id="lRB-EQ-3jU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8QM-rf-3yI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3408.6956521739135" y="452.67857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="footer_icon_list" width="31" height="19"/>
+    </resources>
+</document>

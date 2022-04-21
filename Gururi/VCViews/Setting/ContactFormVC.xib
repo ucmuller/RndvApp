@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="rounded-mplus-2c-medium.ttf">
+            <string>rounded-mplus-2c-medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ContactFormVC" customModule="Gururi" customModuleProvider="target">
+            <connections>
+                <outlet property="contactForm" destination="00l-Fk-9HJ" id="StE-Dr-fwE"/>
+                <outlet property="descriptionLabel" destination="eeE-Tm-UIB" id="gtH-R7-1LI"/>
+                <outlet property="scrollView" destination="Y6o-Mk-6W0" id="KHW-9U-p1B"/>
+                <outlet property="sendMailButton" destination="ZnD-Ea-k2p" id="7aJ-b3-F5S"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Sj8-vG-jWL">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y6o-Mk-6W0">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VEk-FW-bpu">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="900"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thanks_ill" translatesAutoresizingMaskIntoConstraints="NO" id="GrR-PE-Nek">
+                                    <rect key="frame" x="0.0" y="30" width="414" height="128"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="GrR-PE-Nek" secondAttribute="height" multiplier="207:64" id="y10-fx-iyK"/>
+                                    </constraints>
+                                </imageView>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" borderStyle="roundedRect" placeholder="内容" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="00l-Fk-9HJ">
+                                    <rect key="frame" x="40" y="275" width="334" height="200"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="200" id="GCX-43-J7g"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZnD-Ea-k2p">
+                                    <rect key="frame" x="40" y="535" width="334" height="50"/>
+                                    <color key="backgroundColor" red="0.98431372549999996" green="0.74901960779999999" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="Jmw-Vd-tez"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="rounded-mplus-2c-medium" family="Rounded M+ 2c" pointSize="17"/>
+                                    <state key="normal" title="送信">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="sendMessageButtonPressed:" destination="-1" eventType="touchUpInside" id="Oqw-FW-4jj"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eeE-Tm-UIB">
+                                    <rect key="frame" x="0.0" y="178" width="414" height="47"/>
+                                    <fontDescription key="fontDescription" name="rounded-mplus-2c-medium" family="Rounded M+ 2c" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstItem="00l-Fk-9HJ" firstAttribute="leading" secondItem="VEk-FW-bpu" secondAttribute="leading" constant="40" id="0Yn-GJ-swp"/>
+                                <constraint firstItem="eeE-Tm-UIB" firstAttribute="top" secondItem="GrR-PE-Nek" secondAttribute="bottom" constant="20" id="2i4-YO-snw"/>
+                                <constraint firstAttribute="trailing" secondItem="eeE-Tm-UIB" secondAttribute="trailing" id="6D3-tG-G4J"/>
+                                <constraint firstItem="00l-Fk-9HJ" firstAttribute="top" secondItem="eeE-Tm-UIB" secondAttribute="bottom" constant="50" id="A9H-dG-iWX"/>
+                                <constraint firstItem="GrR-PE-Nek" firstAttribute="top" secondItem="VEk-FW-bpu" secondAttribute="top" constant="30" id="DNR-Ig-kuF"/>
+                                <constraint firstItem="eeE-Tm-UIB" firstAttribute="leading" secondItem="VEk-FW-bpu" secondAttribute="leading" id="Dku-xv-KVL"/>
+                                <constraint firstItem="ZnD-Ea-k2p" firstAttribute="top" secondItem="00l-Fk-9HJ" secondAttribute="bottom" constant="60" id="FRM-Sc-9Ks"/>
+                                <constraint firstAttribute="height" constant="900" id="GDK-dB-NkT"/>
+                                <constraint firstAttribute="trailing" secondItem="00l-Fk-9HJ" secondAttribute="trailing" constant="40" id="TNn-lf-MsR"/>
+                                <constraint firstAttribute="trailing" secondItem="ZnD-Ea-k2p" secondAttribute="trailing" constant="40" id="Tan-vH-n5n"/>
+                                <constraint firstItem="GrR-PE-Nek" firstAttribute="centerX" secondItem="VEk-FW-bpu" secondAttribute="centerX" id="WtC-b5-Rhb"/>
+                                <constraint firstItem="ZnD-Ea-k2p" firstAttribute="leading" secondItem="VEk-FW-bpu" secondAttribute="leading" constant="40" id="oBe-V4-IPi"/>
+                                <constraint firstAttribute="trailing" secondItem="GrR-PE-Nek" secondAttribute="trailing" id="sH7-ZQ-sgP"/>
+                                <constraint firstItem="GrR-PE-Nek" firstAttribute="leading" secondItem="VEk-FW-bpu" secondAttribute="leading" id="x6a-Md-2xT"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="VEk-FW-bpu" firstAttribute="top" secondItem="sVy-Gn-n3V" secondAttribute="top" id="MBa-0H-hqd"/>
+                        <constraint firstItem="VEk-FW-bpu" firstAttribute="trailing" secondItem="sVy-Gn-n3V" secondAttribute="trailing" id="T0b-7z-i2D"/>
+                        <constraint firstItem="VEk-FW-bpu" firstAttribute="bottom" secondItem="sVy-Gn-n3V" secondAttribute="bottom" id="ZMm-iz-DE7"/>
+                        <constraint firstItem="VEk-FW-bpu" firstAttribute="leading" secondItem="sVy-Gn-n3V" secondAttribute="leading" id="wZ2-5U-3vq"/>
+                        <constraint firstItem="VEk-FW-bpu" firstAttribute="width" secondItem="Dgn-F3-UOP" secondAttribute="width" id="zwp-ul-4si"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="sVy-Gn-n3V"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="Dgn-F3-UOP"/>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="OXH-eZ-BSN" firstAttribute="trailing" secondItem="Y6o-Mk-6W0" secondAttribute="trailing" id="SVF-5f-wPc"/>
+                <constraint firstItem="OXH-eZ-BSN" firstAttribute="bottom" secondItem="Y6o-Mk-6W0" secondAttribute="bottom" id="UZ0-Rc-Ogj"/>
+                <constraint firstItem="Y6o-Mk-6W0" firstAttribute="top" secondItem="OXH-eZ-BSN" secondAttribute="top" id="eJu-6Y-Tko"/>
+                <constraint firstItem="Y6o-Mk-6W0" firstAttribute="leading" secondItem="OXH-eZ-BSN" secondAttribute="leading" id="kXt-h9-e4j"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="OXH-eZ-BSN"/>
+            <point key="canvasLocation" x="927.536231884058" y="249.77678571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="thanks_ill" width="205" height="100"/>
+    </resources>
+</document>

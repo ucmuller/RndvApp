@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="rounded-mplus-2c-medium.ttf">
+            <string>rounded-mplus-2c-medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ReferralCodeInputFormView" customModule="Gururi" customModuleProvider="target">
+            <connections>
+                <outlet property="cautionaryPointsTextView" destination="IHB-sp-tol" id="pKy-zr-aEz"/>
+                <outlet property="referralCodeErrorLabel" destination="Of4-UZ-5t1" id="OIV-1S-LDM"/>
+                <outlet property="referralCodeTextField" destination="FAI-WQ-GyD" id="Uqp-tw-Cga"/>
+                <outlet property="refferralCodeSendButton" destination="DPX-xi-fhM" id="SDu-7q-y9b"/>
+                <outlet property="scrollView" destination="miK-E9-X3U" id="hY4-V1-KWn"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="vPc-e0-bJq">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="miK-E9-X3U">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M1x-X3-Iy3">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="900"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DPX-xi-fhM">
+                                    <rect key="frame" x="30" y="171" width="354" height="50"/>
+                                    <color key="backgroundColor" red="0.98431372549999996" green="0.74901960779999999" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="t3y-KK-yMs"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="rounded-mplus-2c-medium" family="Rounded M+ 2c" pointSize="17"/>
+                                    <state key="normal" title="次へ">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="referralCodeSendButtonPressed:" destination="-1" eventType="touchUpInside" id="I9i-Ce-MWN"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="店舗招待コード" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JfY-hR-1Vu">
+                                    <rect key="frame" x="30" y="50" width="354" height="21"/>
+                                    <fontDescription key="fontDescription" name="rounded-mplus-2c-medium" family="Rounded M+ 2c" pointSize="15"/>
+                                    <color key="textColor" red="0.47835713619999998" green="0.52550548320000001" blue="0.60309123990000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FAI-WQ-GyD">
+                                    <rect key="frame" x="30" y="81" width="354" height="50"/>
+                                    <color key="backgroundColor" red="0.95306235549999996" green="0.95662146810000004" blue="0.9686297774" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="PLV-2W-8d7"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="rounded-mplus-2c-medium" family="Rounded M+ 2c" pointSize="17"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                </textField>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Of4-UZ-5t1">
+                                    <rect key="frame" x="30" y="131" width="354" height="0.0"/>
+                                    <fontDescription key="fontDescription" name="rounded-mplus-2c-medium" family="Rounded M+ 2c" pointSize="17"/>
+                                    <color key="textColor" red="0.80000000000000004" green="0.0" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="text" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="IHB-sp-tol">
+                                    <rect key="frame" x="30" y="231" width="354" height="669"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <fontDescription key="fontDescription" name="rounded-mplus-2c-medium" family="Rounded M+ 2c" pointSize="17"/>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                </textView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstItem="Of4-UZ-5t1" firstAttribute="top" secondItem="FAI-WQ-GyD" secondAttribute="bottom" id="1Ew-Xa-Ntr"/>
+                                <constraint firstItem="DPX-xi-fhM" firstAttribute="leading" secondItem="M1x-X3-Iy3" secondAttribute="leading" constant="30" id="3NN-VY-4gM"/>
+                                <constraint firstAttribute="trailing" secondItem="FAI-WQ-GyD" secondAttribute="trailing" constant="30" id="5Qy-C4-VLR"/>
+                                <constraint firstAttribute="trailing" secondItem="Of4-UZ-5t1" secondAttribute="trailing" constant="30" id="5kz-3l-0cU"/>
+                                <constraint firstAttribute="trailing" secondItem="DPX-xi-fhM" secondAttribute="trailing" constant="30" id="7Pz-QN-PKQ"/>
+                                <constraint firstAttribute="trailing" secondItem="JfY-hR-1Vu" secondAttribute="trailing" constant="30" id="9x2-i9-Xq7"/>
+                                <constraint firstItem="DPX-xi-fhM" firstAttribute="top" secondItem="FAI-WQ-GyD" secondAttribute="bottom" constant="40" id="GvR-RG-ebB"/>
+                                <constraint firstAttribute="trailing" secondItem="IHB-sp-tol" secondAttribute="trailing" constant="30" id="HVH-tM-kkk"/>
+                                <constraint firstItem="FAI-WQ-GyD" firstAttribute="leading" secondItem="M1x-X3-Iy3" secondAttribute="leading" constant="30" id="JQD-v1-xGp"/>
+                                <constraint firstItem="IHB-sp-tol" firstAttribute="top" secondItem="DPX-xi-fhM" secondAttribute="bottom" constant="10" id="KyR-IO-V8y"/>
+                                <constraint firstItem="JfY-hR-1Vu" firstAttribute="leading" secondItem="M1x-X3-Iy3" secondAttribute="leading" constant="30" id="OAr-jO-6km"/>
+                                <constraint firstItem="IHB-sp-tol" firstAttribute="leading" secondItem="M1x-X3-Iy3" secondAttribute="leading" constant="30" id="QcI-8d-1B6"/>
+                                <constraint firstItem="FAI-WQ-GyD" firstAttribute="top" secondItem="JfY-hR-1Vu" secondAttribute="bottom" constant="10" id="cch-zQ-sCk"/>
+                                <constraint firstItem="Of4-UZ-5t1" firstAttribute="leading" secondItem="M1x-X3-Iy3" secondAttribute="leading" constant="30" id="ci3-dk-a0w"/>
+                                <constraint firstItem="IHB-sp-tol" firstAttribute="centerX" secondItem="M1x-X3-Iy3" secondAttribute="centerX" id="cks-AH-Ruk"/>
+                                <constraint firstAttribute="height" constant="900" id="gT8-2K-CkV"/>
+                                <constraint firstAttribute="bottom" secondItem="IHB-sp-tol" secondAttribute="bottom" id="giA-b3-qed"/>
+                                <constraint firstItem="JfY-hR-1Vu" firstAttribute="top" secondItem="M1x-X3-Iy3" secondAttribute="top" constant="50" id="o8F-sf-Y7J"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="M1x-X3-Iy3" secondAttribute="bottom" id="3Jq-tS-1iQ"/>
+                        <constraint firstItem="M1x-X3-Iy3" firstAttribute="leading" secondItem="YAS-oc-ghT" secondAttribute="leading" id="GzI-RS-SgV"/>
+                        <constraint firstItem="M1x-X3-Iy3" firstAttribute="trailing" secondItem="YAS-oc-ghT" secondAttribute="trailing" id="LzV-9b-R7l"/>
+                        <constraint firstItem="M1x-X3-Iy3" firstAttribute="top" secondItem="miK-E9-X3U" secondAttribute="top" id="ZHa-7V-UD7"/>
+                        <constraint firstItem="M1x-X3-Iy3" firstAttribute="top" secondItem="YAS-oc-ghT" secondAttribute="top" id="uDf-0Q-1aC"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="9K3-6V-Jkv"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="YAS-oc-ghT"/>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="miK-E9-X3U" firstAttribute="leading" secondItem="3ry-B5-Mav" secondAttribute="leading" id="BjH-cR-23v"/>
+                <constraint firstItem="miK-E9-X3U" firstAttribute="top" secondItem="3ry-B5-Mav" secondAttribute="top" id="HsX-EM-qL5"/>
+                <constraint firstItem="3ry-B5-Mav" firstAttribute="trailing" secondItem="miK-E9-X3U" secondAttribute="trailing" id="LtG-OA-qDF"/>
+                <constraint firstItem="miK-E9-X3U" firstAttribute="bottom" secondItem="3ry-B5-Mav" secondAttribute="bottom" id="d3R-Rd-L1C"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="3ry-B5-Mav"/>
+            <point key="canvasLocation" x="-800" y="-154"/>
+        </view>
+    </objects>
+</document>

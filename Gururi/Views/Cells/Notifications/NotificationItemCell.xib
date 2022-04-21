@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="rounded-mplus-2c-medium.ttf">
+            <string>rounded-mplus-2c-medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="KGk-i7-Jjw" customClass="NotificationItemCell" customModule="Gururi" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="m3R-Ro-esm">
+                        <rect key="frame" x="10" y="15" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="cWV-8H-eR7"/>
+                            <constraint firstAttribute="height" constant="40" id="j62-FM-GNb"/>
+                            <constraint firstAttribute="width" constant="40" id="rHi-NW-gSO"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SsT-et-zmh">
+                        <rect key="frame" x="60" y="10" width="250" height="21"/>
+                        <fontDescription key="fontDescription" name="rounded-mplus-2c-medium" family="Rounded M+ 2c" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2019.01.07" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gii-B8-zPE">
+                        <rect key="frame" x="60" y="45" width="250" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="5Wo-wy-O3b"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="rounded-mplus-2c-medium" family="Rounded M+ 2c" pointSize="11"/>
+                        <color key="textColor" red="0.47835713619999998" green="0.52550548320000001" blue="0.60309123990000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="gii-B8-zPE" firstAttribute="leading" secondItem="m3R-Ro-esm" secondAttribute="trailing" constant="10" id="40H-eQ-MrG"/>
+                    <constraint firstAttribute="trailing" secondItem="gii-B8-zPE" secondAttribute="trailing" constant="10" id="4QG-qQ-bIN"/>
+                    <constraint firstItem="m3R-Ro-esm" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="BuL-Qf-TaY"/>
+                    <constraint firstAttribute="bottom" secondItem="gii-B8-zPE" secondAttribute="bottom" constant="5" id="TYa-N5-ksl"/>
+                    <constraint firstAttribute="trailing" secondItem="SsT-et-zmh" secondAttribute="trailing" constant="10" id="g57-ff-em1"/>
+                    <constraint firstItem="SsT-et-zmh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="pJb-iB-h1b"/>
+                    <constraint firstItem="m3R-Ro-esm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="rLB-Ga-2gX"/>
+                    <constraint firstItem="SsT-et-zmh" firstAttribute="leading" secondItem="m3R-Ro-esm" secondAttribute="trailing" constant="10" id="rhg-rb-tMq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="notificationCreatedAt" destination="gii-B8-zPE" id="EJZ-El-1oT"/>
+                <outlet property="notificationImage" destination="m3R-Ro-esm" id="IBM-KZ-R6n"/>
+                <outlet property="notificationTitle" destination="SsT-et-zmh" id="XOH-Xf-omC"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="155.35714285714286"/>
+        </tableViewCell>
+    </objects>
+</document>

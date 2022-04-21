@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InvitationDetailVC" customModule="Gururi" customModuleProvider="target">
+            <connections>
+                <outlet property="detailView" destination="a7X-cH-3Jc" id="27P-r0-UEV"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Leh-Q6-gOc">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Co-7I-Yt3">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lpp-iW-OXM" userLabel="ContentView">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a7X-cH-3Jc" customClass="InvitationDetailView" customModule="Gururi" customModuleProvider="target">
+                                    <rect key="frame" x="20.5" y="30" width="373" height="758"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="758" id="p07-L1-bXB"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" red="1" green="0.86274509799999999" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstItem="a7X-cH-3Jc" firstAttribute="centerX" secondItem="Lpp-iW-OXM" secondAttribute="centerX" id="A3P-dN-QMk"/>
+                                <constraint firstItem="a7X-cH-3Jc" firstAttribute="top" secondItem="Lpp-iW-OXM" secondAttribute="top" constant="30" id="DYb-8r-2dJ"/>
+                                <constraint firstItem="a7X-cH-3Jc" firstAttribute="width" secondItem="Lpp-iW-OXM" secondAttribute="width" multiplier="0.9" id="HpB-zv-GRk"/>
+                                <constraint firstAttribute="height" secondItem="a7X-cH-3Jc" secondAttribute="height" multiplier="1.07916" id="Sas-Q5-nWX"/>
+                                <constraint firstItem="a7X-cH-3Jc" firstAttribute="centerY" secondItem="Lpp-iW-OXM" secondAttribute="centerY" id="wIf-QI-cUG"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Lpp-iW-OXM" secondAttribute="trailing" id="NQI-yr-s5Q"/>
+                        <constraint firstItem="Lpp-iW-OXM" firstAttribute="top" secondItem="4Co-7I-Yt3" secondAttribute="top" id="bde-JN-5nU"/>
+                        <constraint firstAttribute="bottom" secondItem="Lpp-iW-OXM" secondAttribute="bottom" id="doK-wi-Vpg"/>
+                        <constraint firstItem="Lpp-iW-OXM" firstAttribute="height" secondItem="4Co-7I-Yt3" secondAttribute="height" priority="250" id="kIg-xj-Hvc"/>
+                        <constraint firstItem="Lpp-iW-OXM" firstAttribute="leading" secondItem="4Co-7I-Yt3" secondAttribute="leading" id="s7G-yl-Nkc"/>
+                        <constraint firstItem="Lpp-iW-OXM" firstAttribute="width" secondItem="4Co-7I-Yt3" secondAttribute="width" id="s84-wo-FaR"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="4Co-7I-Yt3" firstAttribute="leading" secondItem="hel-Ob-2cb" secondAttribute="leading" id="2zS-OC-NhZ"/>
+                <constraint firstItem="hel-Ob-2cb" firstAttribute="trailing" secondItem="4Co-7I-Yt3" secondAttribute="trailing" id="SeB-zG-L6Y"/>
+                <constraint firstItem="hel-Ob-2cb" firstAttribute="top" secondItem="4Co-7I-Yt3" secondAttribute="top" id="d2N-Lf-6Q5"/>
+                <constraint firstItem="hel-Ob-2cb" firstAttribute="bottom" secondItem="4Co-7I-Yt3" secondAttribute="bottom" id="hQW-Pw-2UF"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="hel-Ob-2cb"/>
+            <point key="canvasLocation" x="131.8840579710145" y="93.75"/>
+        </view>
+    </objects>
+</document>
